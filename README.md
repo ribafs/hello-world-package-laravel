@@ -121,12 +121,61 @@ Veja que o ServiceProvider é a peça principal de um package laravel. Em nosso 
 
 ## Publicando nosso pacote no Packagist.org
 
+- Enxugando o composer.json
+
+Removi o require-dev e deixei assim:
+```
+...
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+...
+```
 - Hospedar no Github
 
 Mudei o composer.json para que fique mais coerente:
 
     "name": "ribafs/hello-world-package-laravel",
 
-E hospedei no Github
+E hospedei no Github em:
 
+https://github.com/ribafs/hello-world-package-laravel
+
+Acessei o Packagist.org
+
+https://packagist.org
+
+E publiquei e habilitei a atualização automática.
+
+Agora irei criar o primeiro release do repositório para facilitar a instalação pelos users via composer.
+
+Criei o release 1.0
+
+## Instalando o pacote localmente
+
+Após criar um aplicativo com laravel acesso sua pasta e executo
+
+composer require ribafs/hello-world-package-laravel
+
+## Publicar
+```bash
+php artisan vendor:publish --provider="Ribafs\HelloWorld\HelloWorldServiceProvider"
+```
+Veja as mensagens
+
+Copying file [vendor/ribafs/hello-world-package-laravel/config/config.php] to [config/hello-world.php]
+Copying directory [vendor/ribafs/hello-world-package-laravel/src/Commands] to [app/Console/Commands]
+
+Veja que agora temos um novo comando
+
+app/Console/Commands/HelloWorld.php
+
+Que podemos executar com
+
+php artisan hello:world
+
+## Observação
+
+Claro que não terísmos todo este trabalho para mostrar apenas esta mensagem. O nosso objetivo foi o de criar um pequeno pacote/package e partindo dele podemos criar algo mais útil.
 
