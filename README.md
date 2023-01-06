@@ -179,3 +179,16 @@ php artisan hello:world
 
 Claro que não terísmos todo este trabalho para mostrar apenas esta mensagem. O nosso objetivo foi o de criar um pequeno pacote/package e partindo dele podemos criar algo mais útil.
 
+## Dois ótimos pacotes
+
+ACL para Laravel 9 - https://github.com/ribafs/laravel-acl
+
+Gerador de CRUDs e APIs apra Laravel 9 - https://github.com/ribafs/crud-generator-appzcoder
+
+Estes dois não foram criados por mim. São dois projetos dos quais gostei muito então criei fork deles e os customizei ao meu modo.
+
+O primeiro implementa ACL em aplicativos laravel 9.
+
+O segundo cria CRUDs de uma forma muito simples para aplicativos laravel 9. Também cria APIs.Como o original não detalha a criação de API eu elaborei um tutorial e coloquei no repositório.
+
+Assim, tanto podemos criar nossos pacotes, quanto criar fork de bons projetos e os customizar, traduzindo, melhorando a documentação, corrigindo alguns erros, etc.
