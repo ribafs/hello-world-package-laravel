@@ -30,40 +30,40 @@ Rolo um pouco a tela e preencho o formulário com os dados do pacote que desejo:
 Ele já vem com pacote Laravel selecionado por default.
 
 Preenchendo o form. Adapte para seus dados
-
+```
 Vendor Name - ribafs
 Package Name - hello-world
 Author Name - Ribamar FS
 Author E-Mail - ribafs@gmail.com
 Package Description - Pequeno pacote para a criação de pacotes para o Laravel 9
-
+```
 Então clico em "Download my package" e salvo o pacote.
 
 Com isso ele me gera a estrutura básica de um pacote laravel, já com o 
-
+```
 composer.json
 src/ViewMaker.php
 src/ViewMakerFacade.php
 src/ViewMakerServiceProvider.php
 README.md
 E outros
-
+```
 Então descompacto em alguma pasta.
 
 ## Customizando a estrutura básica
 
 ### Criar o comando helloWorld
-
+```
 cd packagesLaravel
-
+```
 php artisan make:command helloWorld
 
 Será criado em
-
+```
 app/Console/Commands
  
 nano helloWorld.php
-
+```
 Edite e deixe assim:
 ```php
 <?php
@@ -85,25 +85,25 @@ class helloWorld extends Command
 ```
 
 ### Executar o comando criado pelo pacote
-
+```
 php artisan hello:world
-
+```
 Agora iremos adicionar este pequeno comando ao nosso pacote
 
 Criar a pasta
-
+```
 src/Commands
-
+```
 Então copiamos
-
+```
 app/Console/Commands/helloWorld.php para a pasta src/Commands do pacote
-
+```
 ### Adicionando o comando ao Service Provider
 
 Edite no pacote hello-world
-
+```
 src/HelloWorldServiceProvider.php
-
+```
 O método boot()
 ```php
     public function boot()
@@ -139,9 +139,9 @@ Removi o require-dev e deixei assim:
 - Hospedar no Github
 
 Mudei o composer.json para que fique mais coerente:
-
+```
     "name": "ribafs/hello-world-package-laravel",
-
+```
 E hospedei no Github em:
 
 https://github.com/ribafs/hello-world-package-laravel
@@ -167,23 +167,23 @@ composer require ribafs/hello-world-package-laravel
 php artisan vendor:publish --provider="Ribafs\HelloWorld\HelloWorldServiceProvider"
 ```
 Veja as mensagens
-
+```
 Copying file [vendor/ribafs/hello-world-package-laravel/config/config.php] to [config/hello-world.php]
 Copying directory [vendor/ribafs/hello-world-package-laravel/src/Commands] to [app/Console/Commands]
-
+```
 Veja que agora temos um novo comando
-
+```
 app/Console/Commands/HelloWorld.php
-
+```
 Que podemos executar com
-
+```
 php artisan hello:world
-
+```
 ## Observação
 
 Claro que não terísmos todo este trabalho para mostrar apenas esta mensagem. O nosso objetivo foi o de criar um pequeno pacote/package e partindo dele podemos criar algo mais útil.
 
-## Dois ótimos pacotes
+## Criando forks de pacotes de terceiros e customizando
 
 ACL para Laravel 9 - https://github.com/ribafs/laravel-acl
 
