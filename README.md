@@ -4,7 +4,7 @@ Vejamos a criação, a publicação no Packagist.org e a instalação e publica�
 
 ## Pacotes/packages
 
-Um package no laravel pode extender as funcionalidades dos aplicativos. Com um pacote podemos praticamente adicionar um novo aplicativo ao aplicativo existente. Aqui mostro apenas um pequeno pacote que empacota um pequeno comando com uma mensagem, mas que pode ser usado para criar algo mais útil. Ao final passo sugestões de pacotes mais úteis e bem 
+Um package no laravel pode extender as funcionalidades dos aplicativos. Com um pacote podemos praticamente adicionar um novo aplicativo ao aplicativo existente. Aqui mostro apenas um pequeno pacote que empacota um pequeno comando com uma mensagem, mas que pode ser usado para criar algo mais útil. Ao final passo sugestões de pacotes mais úteis e bem úteis.
 
 ## Cenário/Planejamento
 
