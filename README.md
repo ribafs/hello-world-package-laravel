@@ -10,6 +10,10 @@ Um package no laravel estende as funcionalidades dos aplicativos sem alterar o c
 
 Vamos criar um pequeno pacote, que basicamente tem um command que ao ser executado mostra a mensagem "Hello World"
 
+## URL deste projeto
+
+https://github.com/ribafs/hello-world-package-laravel
+
 ## Criação
 
 Aqui estou oferecendo duas formas de criação do pacote:
