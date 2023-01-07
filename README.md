@@ -61,7 +61,7 @@ php artisan make:command helloWorld
 Será criado em
 
 app/Console/Commands
-
+ 
 nano helloWorld.php
 
 Edite e deixe assim:
