@@ -80,7 +80,7 @@ class helloWorld extends Command
 }
 ```
 
-### Executar o comando criado
+### Executar o comando criado pelo pacote
 
 php artisan hello:world
 
