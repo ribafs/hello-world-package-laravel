@@ -6,6 +6,10 @@ Vejamos a criação, a publicação no Packagist.org e a instalação e publica�
 
 Um package no laravel estende as funcionalidades dos aplicativos sem alterar o código dos mesmos. Com um pacote podemos adicionar um simples pacote até praticamente outro aplicativo, contendo models, controllers, migrations, rotas, e mais ao aplicativo existente. Aqui mostro apenas um pequeno pacote que empacota um pequeno comando com uma mensagem, mas que pode ser usado para criar algo mais útil. Ao final passo sugestões de pacotes bem mais úteis.
 
+## Boa leitura
+
+https://ashallendesign.co.uk/blog/8-essential-questions-to-ask-before-using-a-laravel-package
+
 ## Cenário/Planejamento
 
 Vamos criar um pequeno pacote, que basicamente tem um command que ao ser executado mostra a mensagem "Hello World"
